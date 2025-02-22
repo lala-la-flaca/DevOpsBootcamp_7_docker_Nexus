@@ -26,7 +26,7 @@ This demo project is part of Module 7: Containers with Docker from the Nana DevO
 ## 🏗 Project Architecture
 <img src="" width=800 />
 
-## ⚙️ Project Configuration:
+## ⚙️ Project Configuration
 ### Creating Docker Hosted Repository on Nexus
 1. Access the Nexus repository, then create a Docker-hosted repository.
    
@@ -50,10 +50,16 @@ This demo project is part of Module 7: Containers with Docker from the Nana DevO
    <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_7_docker_Nexus/blob/main/Img/ActivatingDcokerTokenNexus.png" width=800 />
    
 4. Enable access to insecure registries in the docker daemon by modifying the daemon.json file, which is located **/etc/docker/daemon.json**. If the file does not exist, then create a new one.
-   
+
+   ```bash
+      {
+   	"insecure-registries" : ["157.230.56.153:8083"]  
+      }
+   ```
+
    <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_7_docker_Nexus/blob/main/Img/creating%20DockerDaemonJson%20file.PNG" width=800 />
    
-5. Restart the docker daemon to apply the changes.
+6. Restart the docker daemon to apply the changes.
     
     <img src="https://github.com/lala-la-flaca/DevOpsBootcamp_7_docker_Nexus/blob/main/Img/restating%20docker%20daemon.PNG" width=800 />
 
