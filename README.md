@@ -101,7 +101,7 @@ This demo project is part of Module 7: Containers with Docker from the Nana DevO
 
 
 ### Fetching Docker Image
-1. Fetching image with Nexus API
+1. Fetching image using Nexus API
    
    ```bash
    curl -u docker:docker -X GET 'http://157.230.56.153:8081/service/rest/v1/components?repository=docker-hosted'
